@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> World Tour </title>
+
+    <link rel="icon" href="C:\Users\gsk27\OneDrive\Desktop\World Tour\Favicon.png">
+
+    <style>
+        @import url('https: //fonts.googleapis.com/css2?family=Sources+Sans+Pro:wght@600&display=swap');
+        html{
+            font-size: 18px;
+            font-family: calibri;
+        }
+        body{
+            background-color: #ededed;
+        }
+        .margin{
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+        .heading1{
+            margin-top: 2%;
+            font-size: 2.5rem;
+            font-family: arial;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            margin-top: 5%;
+        }
+        .btn{
+            width: 230px;
+            height: 80px;
+            color: cyan;
+            background-color: black;
+            border: 3px solid cyan;
+            border-radius: 4px;
+            transition: ease-out 0.3s;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            outline: none;
+            position: relative;
+            z-index: 1;
+        }
+        .btn:hover{
+            color: whitesmoke;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:before{
+            transition: 0.5s all ease;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+            content: "";
+            background-color: cyan;
+        }
+        .btn:hover:before{
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+            z-index: -1;
+        }
+        .heading2{
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            color: #1b1d1e;
+            letter-spacing: 1.5px;
+            margin-top: 4%;
+            font-size: 2.3rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .map{
+            float: right;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        .flag{
+            padding-top: 1%;
+            padding-bottom: 2%;
+            cursor: pointer;
+        }
+        .places{
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+            margin: 0;
+        }
+        .places .img-container{
+            position: relative;
+            flex: 25rem;
+            overflow: hidden;
+            border:.6rem solid #fff;
+            box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+            background-color: white;
+        }
+        .places .img-container img{
+            height: 20rem;
+            object-fit: cover;
+        }
+        .places .img-container .content{
+            position: absolute;
+            top:-100%; left:0;
+            height: 20rem;
+            width: 100%;
+            font-family: Nunito;
+            background-color: rgba(0,0,0,.7);
+            padding: 2rem;
+            padding-top: 1.3rem;
+            text-align: center;
+            box-sizing: border-box;
+            transition: all .2s linear;
+        }
+        .places .img-container:hover .content{
+            top: 0;
+        }
+        .places .img-container .content h3{
+            font-size: 2rem;
+            color: orange;
+        }
+        .places .img-container .content p{
+            font-size: 1.3rem;
+            color:#eee;
+            padding-top: 2rem;
+        }
+        @media screen and (max-width: 1500px){
+            .places .img-container{
+                flex: 20rem;
+            }
+        @media screen and (max-width: 1300px){
+            .margin{
+                margin-right: 2rem;
+                margin-left: 2rem;
+            }
+            .map{
+                width: 21rem;
+            }
+            .flag{
+                width: 9rem;
+            }
+        @media screen and (max-width: 1200px){
+            .places .img-container{
+                flex: 20rem;
+            }
+            .img-container img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 850px){
+            .heading2{
+                font-size: 1.7rem;
+            }
+        }
+        @media screen and (max-width: 750px){
+            .margin{
+                margin-right: 1rem;
+                margin-left: 1rem;
+            }
+            .map{
+                width: 18rem;
+            }
+            .flag{
+                width: 8rem;
+            }
+            .btn{
+                height: 60px;
+                width: 160px;
+                font-size: 1rem;
+            }
+        }
+        @media screen and (max-width: 570px){
+            .heading1{
+                font-size: 2rem;
+            }
+            .map{
+                width: 14rem;
+            }
+            .flag{
+                width: 5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="margin">
+    <h1 class="heading1"> Libya </h1>
+
+    <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Libya\1642566048229.jpg" class="map">
+    
+    <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Libya\Flag.png" class="flag">
+    
+    <p> <b>Capital:</b> Tripoli </p>
+    <p> <b>Population:</b> 68.7 lakhs (2020 est.) </p>
+    <p> <b>Language:</b> Libyan </p>
+    <p> <b>Currency:</b> Libyan dinar </p>
+    
+    <p> Libya, officially the State of Libya, is a country in the Maghreb region in North Africa. It is bordered by the Mediterranean Sea to the north, Egypt to the east, Sudan to the southeast, Chad to the south, Niger to the southwest, Algeria to the west, and Tunisia to the northwest. Libya is made of three historical regions: Tripolitania, Fezzan, and Cyrenaica. With an area of almost 700,000 square miles (1.8 million km2), it is the fourth-largest country in Africa and the Arab world, and the 16th-largest in the world. </p>
+    <p> Libya has the 10th-largest proven oil reserves in the world. The largest city and capital, Tripoli, is located in western Libya and contains over three million of Libya's seven million people. Libya has been inhabited by Berbers since the late Bronze Age as descendants from Iberomaurusian and Capsian cultures.[14] In ancient times the Phoenicians established city-states and trading posts in western Libya. Parts of Libya were variously ruled by Carthaginians, Persians, Egyptians and Macedonians then becoming part of the Byzantine Empire.</p>
+</div>
+
+    <div class="container">
+        <a href="file:///C:/Users/gsk27/OneDrive/Desktop/World%20Tour/Flight.html" target="_blank"><button class="btn"> BOOK NOW </button></a> 
+    </div>
+
+    <h1 class="heading2"> Top Attractions In Libya </h1>
+ 
+    <div class="places">
+        <div class="img-container">
+            <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Libya\23rd July Lake, Misrata , Libya.jpg">
+            <div class="content">
+                <h3> 23rd July Lake, Misrata </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Libya\hadrianic baths, leptis magna, libya.jpg">
+            <div class="content">
+                <h3> Hadrianic Baths, Leptis Magna </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Libya\Knightsbridge War Cemetery, Acroma , Libya.jpg">
+            <div class="content">
+                <h3> Knightsbridge War Cemetery, Acroma </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Libya\Scanenae Frons, Sabratha ,Libya.jpg">
+            <div class="content">
+                <h3> Scanenae Frons, Sabratha </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Libya\Temple of Zeus, Cyrene, Libya.jpg">
+            <div class="content">
+                <h3> Temple of Zeus, Cyrene </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Libya\The arch of marcus aurelius, Tarabulus, Libya.jpg">
+            <div class="content">
+                <h3> The arch of marcus aurelius, Tarabulus </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Libya\Tobruk War Cemetry , Tobruk, Libya.jpg">
+            <div class="content">
+                <h3> Tobruk War Cemetry, Tobruk </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Libya\Tripoli Castle ,Tripoli  , libya.jpg">
+            <div class="content">
+                <h3> Tripoli Castle ,Tripoli </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Libya\Waw an namus, Haruj, Libya.jpg">
+            <div class="content">
+                <h3> Waw an namus, Haruj </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>

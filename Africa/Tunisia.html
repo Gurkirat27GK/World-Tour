@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> World Tour </title>
+
+    <link rel="icon" href="C:\Users\gsk27\OneDrive\Desktop\World Tour\Favicon.png">
+
+    <style>
+        @import url('https: //fonts.googleapis.com/css2?family=Sources+Sans+Pro:wght@600&display=swap');
+        html{
+            font-size: 18px;
+            font-family: calibri;
+        }
+        body{
+            background-color: #ededed;
+        }
+        .margin{
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+        .heading1{
+            margin-top: 2%;
+            font-size: 2.5rem;
+            font-family: arial;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            margin-top: 5%;
+        }
+        .btn{
+            width: 230px;
+            height: 80px;
+            color: cyan;
+            background-color: black;
+            border: 3px solid cyan;
+            border-radius: 4px;
+            transition: ease-out 0.3s;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            outline: none;
+            position: relative;
+            z-index: 1;
+        }
+        .btn:hover{
+            color: whitesmoke;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:before{
+            transition: 0.5s all ease;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+            content: "";
+            background-color: cyan;
+        }
+        .btn:hover:before{
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+            z-index: -1;
+        }
+        .heading2{
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            color: #1b1d1e;
+            letter-spacing: 1.5px;
+            margin-top: 4%;
+            font-size: 2.3rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .map{
+            float: right;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        .flag{
+            padding-top: 1%;
+            padding-bottom: 2%;
+            cursor: pointer;
+        }
+        .places{
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+            margin: 0;
+        }
+        .places .img-container{
+            position: relative;
+            flex: 25rem;
+            overflow: hidden;
+            border:.6rem solid #fff;
+            box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+            background-color: white;
+        }
+        .places .img-container img{
+            height: 20rem;
+            object-fit: cover;
+        }
+        .places .img-container .content{
+            position: absolute;
+            top:-100%; left:0;
+            height: 20rem;
+            width: 100%;
+            font-family: Nunito;
+            background-color: rgba(0,0,0,.7);
+            padding: 2rem;
+            padding-top: 1.3rem;
+            text-align: center;
+            box-sizing: border-box;
+            transition: all .2s linear;
+        }
+        .places .img-container:hover .content{
+            top: 0;
+        }
+        .places .img-container .content h3{
+            font-size: 2rem;
+            color: orange;
+        }
+        .places .img-container .content p{
+            font-size: 1.3rem;
+            color:#eee;
+            padding-top: 2rem;
+        }
+        @media screen and (max-width: 1500px){
+            .places .img-container{
+                flex: 20rem;
+            }
+        @media screen and (max-width: 1300px){
+            .margin{
+                margin-right: 2rem;
+                margin-left: 2rem;
+            }
+            .map{
+                width: 21rem;
+            }
+            .flag{
+                width: 9rem;
+            }
+        @media screen and (max-width: 1200px){
+            .places .img-container{
+                flex: 20rem;
+            }
+            .img-container img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 850px){
+            .heading2{
+                font-size: 1.7rem;
+            }
+        }
+        @media screen and (max-width: 750px){
+            .margin{
+                margin-right: 1rem;
+                margin-left: 1rem;
+            }
+            .map{
+                width: 18rem;
+            }
+            .flag{
+                width: 8rem;
+            }
+            .btn{
+                height: 60px;
+                width: 160px;
+                font-size: 1rem;
+            }
+        }
+        @media screen and (max-width: 570px){
+            .heading1{
+                font-size: 2rem;
+            }
+            .map{
+                width: 14rem;
+            }
+            .flag{
+                width: 5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="margin">
+    <h1 class="heading1"> Tunisia </h1>
+
+    <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Tunisia\1642570737150.jpg" class="map">
+
+    <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Tunisia\Flag.png" class="flag">
+
+    <p> <b>Capital:</b> Tunisia </p>
+    <p> <b>Population:</b> 1.18 crores (2020 est.) </p>
+    <p> <b>Language:</b> Arabic </p>
+    <p> <b>Currency:</b> Tunisian dinar </p>
+    
+    <p> Tunisia, officially the Republic of Tunisia, is the northernmost country in Africa. It is a part of the Maghreb region of North Africa, and is bordered by Algeria to the west and southwest, Libya to the southeast, and the Mediterranean Sea to the north and east; covering 163,610 km², with a population of 11 million. Its 1,300 km (810 mi) of coastline include the African conjunction of the western and eastern parts of the Mediterranean Basin. </p>
+    <p> It is a part of the Maghreb region of North Africa, and is bordered by Algeria to the west and southwest, Libya to the southeast, and the Mediterranean Sea to the north and east; covering 163,610 km2 (63,170 sq mi), with a population of 11 million. It contains the eastern end of the Atlas Mountains and the northern reaches of the Sahara desert, with much of its remaining territory arable land. From early antiquity, Tunisia was inhabited by the indigenous Berbers. Phoenicians began to arrive in the 12th century BC, establishing several settlements, of which Carthage emerged as the most powerful by the 7th century BC. </p>
+</div>
+
+    <div class="container">
+        <a href="file:///C:/Users/gsk27/OneDrive/Desktop/World%20Tour/Flight.html" target="_blank"><button class="btn"> BOOK NOW </button></a> 
+    </div>
+
+    <h1 class="heading2"> Top Attractions In Tunisia </h1>
+ 
+    <div class="places">
+        <div class="img-container">
+            <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Tunisia\Amphitheater, El Djem , Tunisia.jpg">
+            <div class="content">
+                <h3> Amphitheater, El Djem </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Tunisia\archaelogical museum sousse.jpg">
+            <div class="content">
+                <h3> Archaelogical Museum Sousse </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Tunisia\Djebel el Negueb, Chebika , Tunisia.jpg">
+            <div class="content">
+                <h3> Djebel el Negueb, Chebika </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Tunisia\Kasbah.,Hammamet , Tunisia.jpg">
+            <div class="content">
+                <h3> Kasbah, Hammamet </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Tunisia\National Bardo Museum, Tunis , Tunisia.jpg">
+            <div class="content">
+                <h3> National Bardo Museum, Tunis </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Tunisia\Olive Tree Mosque, Tunis, Tunisia.jpg">
+            <div class="content">
+                <h3> Olive Tree Mosque, Tunis </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Tunisia\Ruins of Carthage, Tunis , Tunisia.jpg">
+            <div class="content">
+                <h3> Ruins of Carthage, Tunis </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Tunisia\Sidi Bou Said, Carthage, Tunisia.jpg">
+            <div class="content">
+                <h3> Sidi Bou Said, Carthage </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Africa\Tunisia\Sidi Mahrez, Tunis, Tunisia-LAPTOP-M0LQ0V1R.jpg">
+            <div class="content">
+                <h3> Sidi Mahrez, Tunis </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+            </div>
+        </div>
+    </div>
+       
+</body>
+</html>

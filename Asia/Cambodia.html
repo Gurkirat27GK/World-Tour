@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title> World Tour </title>
+
+	<link rel="icon" href="C:\Users\gsk27\OneDrive\Desktop\World Tour\Favicon.png">
+
+    <style>
+        @import url('https: //fonts.googleapis.com/css2?family=Sources+Sans+Pro:wght@600&display=swap');
+        html{
+            font-size: 18px;
+            font-family: calibri;
+        }
+        body{
+            background-color: #ededed;
+        }
+        .margin{
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+        .heading1{
+            margin-top: 2%;
+            font-size: 2.5rem;
+            font-family: arial;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            margin-top: 5%;
+        }
+        .btn{
+            width: 230px;
+            height: 80px;
+            color: cyan;
+            background-color: black;
+            border: 3px solid cyan;
+            border-radius: 4px;
+            transition: ease-out 0.3s;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            outline: none;
+            position: relative;
+            z-index: 1;
+        }
+        .btn:hover{
+            color: whitesmoke;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:before{
+            transition: 0.5s all ease;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+            content: "";
+            background-color: cyan;
+        }
+        .btn:hover:before{
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+            z-index: -1;
+        }
+        .heading2{
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            color: #1b1d1e;
+            letter-spacing: 1.5px;
+            margin-top: 4%;
+            font-size: 2.3rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .map{
+            float: right;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        .flag{
+            padding-top: 1%;
+            padding-bottom: 2%;
+            cursor: pointer;
+        }
+        .places{
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+            margin: 0;
+        }
+        .places .img-container{
+            position: relative;
+            flex: 25rem;
+            overflow: hidden;
+            border:.6rem solid #fff;
+            box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+            background-color: white;
+        }
+        .places .img-container img{
+            height: 20rem;
+            object-fit: cover;
+        }
+        .places .img-container .content{
+            position: absolute;
+            top:-100%; left:0;
+            height: 20rem;
+            width: 100%;
+            font-family: Nunito;
+            background-color: rgba(0,0,0,.7);
+            padding: 2rem;
+            padding-top: 1.3rem;
+            text-align: center;
+            box-sizing: border-box;
+            transition: all .2s linear;
+        }
+        .places .img-container:hover .content{
+            top: 0;
+        }
+        .places .img-container .content h3{
+            font-size: 2rem;
+            color: orange;
+        }
+        .places .img-container .content p{
+            font-size: 1.3rem;
+            color:#eee;
+            padding-top: 2rem;
+        }
+        @media screen and (max-width: 1500px){
+            .places .img-container{
+                flex: 20rem;
+            }
+        @media screen and (max-width: 1300px){
+            .margin{
+                margin-right: 2rem;
+                margin-left: 2rem;
+            }
+            .map{
+                width: 21rem;
+            }
+            .flag{
+                width: 9rem;
+            }
+        @media screen and (max-width: 1200px){
+            .places .img-container{
+                flex: 20rem;
+            }
+            .img-container img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 850px){
+            .heading2{
+                font-size: 1.7rem;
+            }
+        }
+        @media screen and (max-width: 750px){
+            .margin{
+                margin-right: 1rem;
+                margin-left: 1rem;
+            }
+            .map{
+                width: 18rem;
+            }
+            .flag{
+                width: 8rem;
+            }
+            .btn{
+                height: 60px;
+                width: 160px;
+                font-size: 1rem;
+            }
+        }
+        @media screen and (max-width: 570px){
+            .heading1{
+                font-size: 2rem;
+            }
+            .map{
+                width: 14rem;
+            }
+            .flag{
+                width: 5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="margin">
+	<h1 class="heading1"> Cambodia </h1>
+
+    <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Cambodia\R.gif" class="map">
+	
+	<img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Cambodia\1200px-Flag_of_Cambodia.svg.png" class="flag">
+   
+	<p> <b>Capital:</b> Phnom Penh </p>
+	<p> <b>Population:</b> 1.6 crores (2021 est.) </p>
+	<p> <b>Language:</b> Khmer </p>
+	<p> <b>Currency:</b> Cambodian riel </p>
+
+	<p> Cambodia is a Southeast Asian nation whose landscape spans low-lying plains, the Mekong Delta, mountains and Gulf of Thailand coastline. Phnom Penh, its capital, is home to the art deco Central Market, glittering Royal Palace and the National Museum's historical and archaeological exhibits. In the country's northwest are the ruins of Angkor Wat, a massive stone temple complex built during the Khmer Empire.</p>
+    <p> With beautiful beaches, delicate and aromatic cuisine, mystical temples, a cosmopolitan capital and a long history that culminated in recent tragedies, Cambodia is one of the most exciting tourism destinations in Southeast Asia. Enthusiasts of ancient civilizations will be delighted with the amazing architectural heritage left from Buddhist and Hindu emperors, but there are other attractions and plenty to do in Cambodia: historical tours through the country, a dive in the beautiful beaches, or a boat ride through fascinating floating villages. </p>
+</div>
+
+    <div class="container">
+        <a href="file:///C:/Users/gsk27/OneDrive/Desktop/World%20Tour/Flight.html" target="_blank"><button class="btn"> BOOK NOW </button></a> 
+    </div>
+
+	<h1 class="heading2"> Top Attractions In Cambodia </h1>       
+
+        <div class="places">
+            <div class="img-container">
+                <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Cambodia\cambodia-angkor-wat.jpg">
+                <div class="content">
+                    <h3> Angkor Wat </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Cambodia\cambodia-battambang-phnom-sampeau.jpg">
+                <div class="content">
+                    <h3> Battambang Phnom Sampeau </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Cambodia\cambodia-koh-rong-samloem.jpg">
+                <div class="content">
+                    <h3> Koh Rong Saloem </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Cambodia\cambodia-kratie-boats-on-the-mekong.jpg">
+                <div class="content">
+                    <h3> Kratie Boats on the Mekong </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Cambodia\cambodia-phnom-penh-royal-palace-2.jpg">
+                <div class="content">
+                    <h3> Phnom Pehn Royal Palace </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Cambodia\cambodia-prasat-preah-vihear.jpg">
+                <div class="content">
+                    <h3> Prasat Preah Vihear </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Cambodia\cambodia-ratanakiri-scenery.jpg">
+                <div class="content">
+                    <h3> Ratanakiri Scenery </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Cambodia\cambodia-sihanoukville-otres-beach.jpg">
+                <div class="content">
+                    <h3> Sihanoukville Otres Beach </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Cambodia\cambodia-top-places-to-visit-banteay-chhmar.jpg">
+                <div class="content">
+                    <h3> Banteay Chhmar </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>

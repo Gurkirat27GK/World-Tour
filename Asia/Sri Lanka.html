@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> World Tour </title>
+
+    <link rel="icon" href="C:\Users\gsk27\OneDrive\Desktop\World Tour\Favicon.png">
+
+    <style>
+        @import url('https: //fonts.googleapis.com/css2?family=Sources+Sans+Pro:wght@600&display=swap');
+        html{
+            font-size: 18px;
+            font-family: calibri;
+        }
+        body{
+            background-color: #ededed;
+        }
+        .margin{
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+        .heading1{
+            margin-top: 2%;
+            font-size: 2.5rem;
+            font-family: arial;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            margin-top: 5%;
+        }
+        .btn{
+            width: 230px;
+            height: 80px;
+            color: cyan;
+            background-color: black;
+            border: 3px solid cyan;
+            border-radius: 4px;
+            transition: ease-out 0.3s;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            outline: none;
+            position: relative;
+            z-index: 1;
+        }
+        .btn:hover{
+            color: whitesmoke;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:before{
+            transition: 0.5s all ease;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+            content: "";
+            background-color: cyan;
+        }
+        .btn:hover:before{
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+            z-index: -1;
+        }
+        .heading2{
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            color: #1b1d1e;
+            letter-spacing: 1.5px;
+            margin-top: 4%;
+            font-size: 2.3rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .map{
+            float: right;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        .flag{
+            padding-top: 1%;
+            padding-bottom: 2%;
+            cursor: pointer;
+        }
+        .places{
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+            margin: 0;
+        }
+        .places .img-container{
+            position: relative;
+            flex: 25rem;
+            overflow: hidden;
+            border:.6rem solid #fff;
+            box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+            background-color: white;
+        }
+        .places .img-container img{
+            height: 20rem;
+            object-fit: cover;
+        }
+        .places .img-container .content{
+            position: absolute;
+            top:-100%; left:0;
+            height: 20rem;
+            width: 100%;
+            font-family: Nunito;
+            background-color: rgba(0,0,0,.7);
+            padding: 2rem;
+            padding-top: 1.3rem;
+            text-align: center;
+            box-sizing: border-box;
+            transition: all .2s linear;
+        }
+        .places .img-container:hover .content{
+            top: 0;
+        }
+        .places .img-container .content h3{
+            font-size: 2rem;
+            color: orange;
+        }
+        .places .img-container .content p{
+            font-size: 1.3rem;
+            color:#eee;
+            padding-top: 2rem;
+        }
+        @media screen and (max-width: 1500px){
+            .places .img-container{
+                flex: 20rem;
+            }
+        @media screen and (max-width: 1300px){
+            .margin{
+                margin-right: 2rem;
+                margin-left: 2rem;
+            }
+            .map{
+                width: 21rem;
+            }
+            .flag{
+                width: 9rem;
+            }
+        @media screen and (max-width: 1200px){
+            .places .img-container{
+                flex: 20rem;
+            }
+            .img-container img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 850px){
+            .heading2{
+                font-size: 1.7rem;
+            }
+        }
+        @media screen and (max-width: 750px){
+            .margin{
+                margin-right: 1rem;
+                margin-left: 1rem;
+            }
+            .map{
+                width: 18rem;
+            }
+            .flag{
+                width: 8rem;
+            }
+            .btn{
+                height: 60px;
+                width: 160px;
+                font-size: 1rem;
+            }
+        }
+        @media screen and (max-width: 570px){
+            .heading1{
+                font-size: 2rem;
+            }
+            .map{
+                width: 14rem;
+            }
+            .flag{
+                width: 5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="margin">
+	<h1 class="heading1"> Sri Lanka </h1>
+
+    <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Sri Lanka\map.jpg" class="map">
+
+	<img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Sri Lanka\800px-Flag_of_Sri_Lanka.svg.png" class="flag">
+
+	<p> <b>Capital:</b> Colombo </p>
+	<p> <b>Population:</b> 2.20 crores (2021 est.) </p>
+	<p> <b>Language:</b> Sinhala </p>
+	<p> <b>Currency:</b> Sri Lankan rupee </p>
+
+     <p> Sri Lanka, formerly known as Ceylon, and officially the Democratic Socialist Republic of Sri Lanka, is an island country in South Asia. It lies in the Indian Ocean, southwest of the Bay of Bengal, and southeast of the Arabian Sea; it is separated from the Indian subcontinent by the Gulf of Mannar and the Palk Strait. It is a gemstone nation along the Indian Ocean where tourism in Sri Lanka is rapidly adjusting to needs of the rising clients and a comprehensive range of things to offer to the international visitors. </p>
+     <p> There are total of eight UNESCO world heritage sites, including some of the temples, telling the 3000 years’ history of ancient practices and all. Some of the names to include are Sigiriya, Anuradhapura, Dambulla Cave Temple, Dambulla, Kandy, Polonnaruwa, Sinharaja and colonial fortresses like Galle, Tricolomalee. Despite the popular attractions, it has also secured some of the wilderness for their tourists including some wild safari tours like Udawalawe National Park, Wilpattu National Wildlife Park, Ridiyagama Safari Park, Wasgamuwa National Park, and much more. </p>
+</div>
+
+    <div class="container">
+        <a href="file:///C:/Users/gsk27/OneDrive/Desktop/World%20Tour/Flight.html" target="_blank"><button class="btn"> BOOK NOW </button></a> 
+    </div>
+
+	<h1 class="heading2"> Top Attractions In Sri Lanka </h1>
+
+        <div class="places">
+            <div class="img-container">
+                <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Sri Lanka\Anuradhapura.jpg">
+                <div class="content">
+                    <h3> Anuradhapura </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Sri Lanka\Jaffna.jpg">
+                <div class="content">
+                    <h3> Jaffna - Peep Into The Past </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Sri Lanka\Nine Arch Bridge – Bridge In The Sky.jpg">
+                <div class="content">
+                    <h3> Nine Arch Bridge </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Sri Lanka\Nuwara-Eliya1.jpg">
+                <div class="content">
+                    <h3> Nuwara Eliyal </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Sri Lanka\Pollonnaruwa.jpg">
+                <div class="content">
+                    <h3> Pollonnaruwa </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Sri Lanka\Ravana Falls – Enjoy The Impressive Sight Of The Magnificent Fall.jpg">
+                <div class="content">
+                    <h3> Ravana Falls </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Sri Lanka\Sigiriya and Polonnaruwa - Ruggedness Amidst The Greenery.jpg">
+                <div class="content">
+                    <h3> Sigiriya & Polonnaruwa </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Sri Lanka\Trincomalee-in-Sri-Lanka.jpg">
+                <div class="content">
+                    <h3> Trrincomalee </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="C:\Users\gsk27\OneDrive\Desktop\World Tour\Asia\Sri Lanka\Yala-National-Park-in-Sri-Lanka_23rd-oct.jpg">
+                <div class="content">
+                    <h3> Yala National Park </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                </div>
+            </div>
+        </div>
+        
+</body>
+</html>
